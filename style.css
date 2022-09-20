@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  
+  background-image: url('./src/landing.png');
+  background-position: center top;
+  background-size: cover;
+   --linear-gradient:border: 1px solid;
+
+  border-image-source: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+.my-page {
+  width: auto;
+  height: 100vh;
+  display: grid;
+  gap: 2.4rem;
+  place-content: center; 
+}
+.profile {
+  display: flex;
+  margin: 0 auto;
+  padding-top:3.2rem;
+  
+}
+.profile :hover{
+  box-shadow:0px 0px 21px -6px #02A0C9;
+  border-radius:60px;
+  cursor: pointer;
+}
+/*
+
+.pisca {
+    animation: pisca 2s infinite;
+    box-shadow: 0px 0px 21px -6px #02A0C9;
+    border-radius: 60px;
+}
+
+@keyframes pisca {
+  70% {
+    box-shadow: 0 0 0 25px rgb(0,0,0,0);
+
+  }
+    100% {
+    box-shadow: 0 0 0 0 rgb(0,0,0,0);
+  }
+}
+*/
+ h2{
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 160%;
+  letter-spacing: -0.47px;
+}
+p{
+  color:#A1A1AA;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 160%;
+
+  letter-spacing: -0.18px;
+}
+li{
+  display: flex;
+  list-style: none;
+}
+ul{
+  display: flex;
+  gap: 1.6rem;
+}
+.img{
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.card-games{
+  display: flex;
+  gap:1.6rem;
+  padding-top: 2.4rem;
+}
+.my-games,
+.my-streamers,
+.my-networks {
+  background-color: #2A2634;
+  min-width: 50.0rem;
+  border-radius: .8rem;
+  padding:2.4rem 3.2rem;
+
+  cursor: pointer;
+
+  
+  background: linear-gradient (90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+}
