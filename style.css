@@ -8,9 +8,11 @@
   --fs-h2: 2.4rem;
   --fs-p: 1.6rem;
 
+  background-color: #121214;
   background-image: url('./src/landing.png');
-  background-position: center top;
+  background-position: top center;
   background-size: cover;
+  background-repeat: no repeat;
   --bck-teste: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
 }
 body {
@@ -28,7 +30,7 @@ body {
   display: flex;
   margin: 0 auto;
   padding-top: 3.2rem;
-  transition: transform 100ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 .profile :hover {
   box-shadow: 0px 0px 20px -6px #02a0c9;
@@ -67,10 +69,15 @@ img {
   display: flex;
   border-radius: 8px;
 }
+
 .card-games {
   display: flex;
   gap: 1.8rem;
   padding-top: 2.4rem;
+  transition: all 2s 300ms ease;
+}
+.card-games :hover {
+  transform: scale(1.1);
 }
 .my-games,
 .my-streamers,
@@ -95,7 +102,14 @@ img {
   border-radius: 1rem;
   border-top: 5px solid transparent;
 }
-@media (min-width: 900px) {
+
+@media (min-width: 780px) {
+  .my-games {
+    width: 80rem;
+  }
+}
+
+@media (min-width: 1200px) {
   :root {
     --fs-h2: 3rem;
     --fs-p: 2.6rem;
