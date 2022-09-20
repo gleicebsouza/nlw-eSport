@@ -28,28 +28,14 @@ body {
   display: flex;
   margin: 0 auto;
   padding-top: 3.2rem;
+  transition: transform 100ms ease-in-out;
 }
 .profile :hover {
   box-shadow: 0px 0px 20px -6px #02a0c9;
   border-radius: 60px;
   cursor: pointer;
+  transform: scale(1.1);
 }
-/*
-.pisca {
-    animation: pisca 2s infinite;
-    box-shadow: 0px 0px 21px -6px #02A0C9;
-    border-radius: 60px;
-}
-@keyframes pisca {
-  70% {
-    box-shadow: 0 0 0 25px rgb(0,0,0,0);
-
-  }
-    100% {
-    box-shadow: 0 0 0 0 rgb(0,0,0,0);
-  }
-}
-*/
 h2 {
   color: white;
   font-family: 'Inter', sans-serif;
@@ -79,10 +65,11 @@ img {
   width: 6rem;
   height: auto;
   display: flex;
+  border-radius: 8px;
 }
 .card-games {
   display: flex;
-  gap: 1.6rem;
+  gap: 1.8rem;
   padding-top: 2.4rem;
 }
 .my-games,
@@ -118,7 +105,7 @@ img {
   }
   img {
     object-fit: cover;
-    width: 18rem;
+    width: 14rem;
     height: auto;
   }
   .card-games {
