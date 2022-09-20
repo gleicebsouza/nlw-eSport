@@ -107,6 +107,11 @@ img {
   .my-games {
     width: 80rem;
   }
+  img {
+    object-fit: cover;
+    width: 10rem;
+    height: auto;
+  }
 }
 
 @media (min-width: 1200px) {
