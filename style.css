@@ -5,45 +5,41 @@
 }
 :root {
   font-size: 62.5%;
-  
+  --fs-h2: 2.4rem;
+  --fs-p: 1.6rem;
+
   background-image: url('./src/landing.png');
   background-position: center top;
   background-size: cover;
-   --linear-gradient:border: 1px solid;
-
-  border-image-source: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
-
+  --bck-teste: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
 }
-body{
+body {
   display: flex;
   flex-direction: column;
 }
 .my-page {
   width: auto;
-  height: 100vh;
   display: grid;
-  gap: 2.4rem;
-  place-content: center; 
+  gap: 2.5rem;
+  place-content: center;
+  padding: 3.2rem 4.6rem;
 }
 .profile {
   display: flex;
   margin: 0 auto;
-  padding-top:3.2rem;
-  
+  padding-top: 3.2rem;
 }
-.profile :hover{
-  box-shadow:0px 0px 21px -6px #02A0C9;
-  border-radius:60px;
+.profile :hover {
+  box-shadow: 0px 0px 20px -6px #02a0c9;
+  border-radius: 60px;
   cursor: pointer;
 }
 /*
-
 .pisca {
     animation: pisca 2s infinite;
     box-shadow: 0px 0px 21px -6px #02A0C9;
     border-radius: 60px;
 }
-
 @keyframes pisca {
   70% {
     box-shadow: 0 0 0 25px rgb(0,0,0,0);
@@ -54,52 +50,80 @@ body{
   }
 }
 */
- h2{
+h2 {
   color: white;
   font-family: 'Inter', sans-serif;
   font-weight: 900;
-  font-size: 2.4rem;
+  font-size: var(--fs-h2);
   line-height: 160%;
   letter-spacing: -0.47px;
 }
-p{
-  color:#A1A1AA;
+p {
+  color: #a1a1aa;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: var(--fs-p);
   line-height: 160%;
-
   letter-spacing: -0.18px;
 }
-li{
+li {
   display: flex;
   list-style: none;
 }
-ul{
+ul {
   display: flex;
   gap: 1.6rem;
 }
-.img{
+img {
   object-fit: cover;
-  width: 100%;
+  width: 6rem;
   height: auto;
   display: flex;
 }
-.card-games{
+.card-games {
   display: flex;
-  gap:1.6rem;
+  gap: 1.6rem;
   padding-top: 2.4rem;
 }
 .my-games,
 .my-streamers,
 .my-networks {
-  background-color: #2A2634;
-  min-width: 50.0rem;
-  border-radius: .8rem;
-  padding:2.4rem 3.2rem;
-
+  background: #373245;
+  min-width: 50rem;
+  border-radius: 0.8rem;
+  padding: 2.4rem 3.2rem;
   cursor: pointer;
-
-  
-  background: linear-gradient (90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+}
+.my-games,
+.my-networks,
+.my-streamers {
+  background: linear-gradient(#2a2634, #2a2634) padding-box,
+    linear-gradient(
+        to right,
+        rgba(149, 114, 252, 1) 10%,
+        rgba(67, 231, 173, 1) 60%,
+        rgba(226, 212, 92, 1) 80%
+      )
+      border-box;
+  border-radius: 1rem;
+  border-top: 5px solid transparent;
+}
+@media (min-width: 900px) {
+  :root {
+    --fs-h2: 3rem;
+    --fs-p: 2.6rem;
+  }
+  .my-games {
+    width: 119rem;
+  }
+  img {
+    object-fit: cover;
+    width: 18rem;
+    height: auto;
+  }
+  .card-games {
+    display: flex;
+    gap: 4rem;
+    padding-top: 2.7rem;
+  }
 }
